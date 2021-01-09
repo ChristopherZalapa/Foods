@@ -158,13 +158,25 @@ html {
     margin: 4rem 1rem;
 }
 
+
+
 .gallery-link::before {
     content: "";
     position: absolute;
     top: 2vw;
     left: 80%;
     width: 0.2rem;
-    height: 80%;
+    height: 0;
+    background-color: #fff;
+}
+
+.gallery-link::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+    width: 0;
+    height: 0.2rem;
     background-color: #fff;
 }
 
@@ -172,6 +184,7 @@ html {
     width: 24vw;
     height: 15vw;
     object-fit: cover;
+    box-shadow: .3rem .3rem 0.1rem #e92929, 0.5rem 0.5rem 0.1rem #a2e946, 0.7rem 0.7rem 0.1rem #297ce9, 0.9rem 0.9rem 0.1rem #e92999;
 }
 
 .food-name {
@@ -183,6 +196,8 @@ html {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: #fff;
+    width: 0;
+    overflow: hidden;
 }
 
 .food-description {
@@ -195,5 +210,7 @@ html {
     letter-spacing: .1rem;
     text-transform: uppercase;
     color: #fff;
+    opacity: 0;
+    visibility: hidden;
 }
 /* End of Section 3 */
