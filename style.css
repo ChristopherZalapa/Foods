@@ -158,7 +158,9 @@ html {
     margin: 4rem 1rem;
 }
 
-
+.gallery-link:hover::before {
+    height: 80%;
+}
 
 .gallery-link::before {
     content: "";
@@ -168,6 +170,11 @@ html {
     width: 0.2rem;
     height: 0;
     background-color: #fff;
+    transition: height .5s;
+}
+
+.gallery-link:hover::after {
+    width: 90%;
 }
 
 .gallery-link::after {
@@ -178,6 +185,7 @@ html {
     width: 0;
     height: 0.2rem;
     background-color: #fff;
+    transition: width .5s;
 }
 
 .food-img {
